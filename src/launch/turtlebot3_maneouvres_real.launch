@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="project_turtlebot_maneouvres" type="wander_realworld.py" name="wander" />
+  <node pkg="project_turtlebot_maneouvres" type="follow_line_realworld.py" name="followline" />
+  <node pkg="project_turtlebot_maneouvres" type="stop_sign_realworld.py" name="stopsign" />
+  <node pkg="project_turtlebot_maneouvres" type="camera_info.py" name="camera_info_trial" />
+  <include file="$(find project_turtlebot_maneouvres)/src/launch/apriltag_follower_real.launch" />
+  
+</launch>
