@@ -1,0 +1,10 @@
+<launch>
+
+  <include file="$(find darknet_ros)/launch/darknet_ros.launch"/>
+  
+      <arg name="node_start_delay" default="10" />  
+  <node name="listener" pkg="roscpp_tutorials" type="listener" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " />
+  
+
+  
+</launch>
