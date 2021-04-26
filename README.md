@@ -39,6 +39,8 @@ https://youtu.be/KOGwsMkNCMc
 ## Running the project
 The project was created on ROS1 on Ubuntu 20.04.
 
+Clone the repository into your local PC. Make sure to name the cloned folder "project_turtlebot_maneouvres".
+
 ### Dependencies
 1. [Turtlebot3 package](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)	
 2. [Turlebot3 simulation](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
