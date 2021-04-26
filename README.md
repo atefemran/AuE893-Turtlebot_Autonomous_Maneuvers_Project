@@ -1,6 +1,8 @@
+![Cover](https://raw.githubusercontent.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/main/src/videos/cover.jpg)
+
 # AuE893-Turtlebot_Autonomous_Maneuvers_Project
 
-This repository contains the code and assets for the AuE893-Turtlebot_Autonomous_Maneuvers_Project for Spring 2021 semester. 
+This repository contains the code and assets for the ROS-based project "TurtleBot Autonomous Maneuvers". As a part of class AUE893 - Autonomy Science and Systems, at Clemson University International Center for Automotive Research (CU-ICAR).
 
 ## Team Members
 		Atef Emran 
@@ -9,21 +11,21 @@ This repository contains the code and assets for the AuE893-Turtlebot_Autonomous
 		Kartik Loya 
 		Ziyue Feng
  
-## Final Project
+## Project Overview
 
-	The final project is an obstacle course which has to be implemented by Turtlebot3 using ROS. It is first implemented in the Gazebo and then the real world. It mainly contains of 4 maneouvers.
+The project is ROS based using the Turtlebot3 Burger in simulation (Gazebo) and real-world environments to go through a prespecified course in which the TurtleBot will have to deal with 4 maneouvers:
 
-		1. Wall follower and Obstacle avoidance
-			Turtlebot maintains safe front distance from obstacle and maneuvers through course until it finds yellow lanes. In this it manipulates Lidar values for the design of controller.
+1. Wall follower and Obstacle avoidance
+   Turtlebot maintains safe front distance from obstacle and maneuvers through course until it finds yellow lanes. In this it manipulates Lidar values for the design of controller.
 		
-		3. Line following
-			Turtlebot follows the yellow line using image processor (open-cv package). The controller uses lane centroid to control the angular speed of the bot.
+3. Line following
+   Turtlebot follows the yellow line using image processor (open-cv package). The controller uses lane centroid to control the angular speed of the bot.
 
-		4. Traffic sign detection
-			Darknet package is used for traffic sign detection. Traffic sign callback functions stop the turtlebot for 3 seconds.
+4. Traffic sign detection
+   Darknet package is used for traffic sign detection. Traffic sign callback functions stop the turtlebot for 3 seconds.
 
-		5. April Tag follower
-			April_ros package is used to detect apriltags and then its co-ordinates are used to design the controller for tracking the april tag
+5. April Tag follower
+   April_ros package is used to detect apriltags and then its co-ordinates are used to design the controller for tracking the april tag
 	
 This project is dependent on the following packages:
 1. [Turtlebot3 package](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)	
