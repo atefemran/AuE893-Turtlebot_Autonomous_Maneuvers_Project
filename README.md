@@ -6,7 +6,7 @@ This repository contains the code and assets for the ROS-based project "TurtleBo
 
 The project is ROS based using the Turtlebot3 Burger in simulation (Gazebo) and real-world environments to go through a prespecified course in which the TurtleBot will have to deal with 4 maneouvers:
 
-![Cover](https://raw.githubusercontent.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/main/src/videos/Track.png)
+![Track](https://raw.githubusercontent.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/main/src/videos/Track.png)
 
 1. Wall follower and Obstacle avoidance
    Turtlebot maintains safe distance from obstacle and maneuvers through course until it finds yellow lanes. In this it manipulates Lidar values for the design of controller.
@@ -21,12 +21,19 @@ The project is ROS based using the Turtlebot3 Burger in simulation (Gazebo) and 
 5. April Tag follower
    AprilTag_ros package is used to detect apriltags and then its co-ordinates are used to design the controller for tracking the april tag, and maintain a sfae distance. 
 
+6. Autonomous switching
+   Navigating the whole course autonomously without any manual entry. This is being excuted using the below ROS archicture.
+   ![ROS_switching](https://raw.githubusercontent.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/main/src/videos/ROS_switching.png)
+
+ 
+ 
 
 ##  Results
 
 ### Gazebo simulation
+![Gazebo gif](https://github.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/blob/main/src/videos/Gazebo%20Simulation%20AUE893%20Turtlebot%20Autonomous%20Maneuvers%20Project_1080p.gif?raw=true)
 
-### Real-World Simulation
+### Real-World Demo
 ![realworld gif](https://github.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/blob/main/src/videos/RealWorld%20AUE893%20Turtlebot%20Autonomous%20Maneuvers%20Project_480p.gif?raw=true)
 
 This project is dependent on the following packages:
