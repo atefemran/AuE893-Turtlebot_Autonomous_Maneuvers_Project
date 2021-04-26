@@ -1,8 +1,8 @@
-# AuE893: Autonomy Science and System
+# AuE893-Turtlebot_Autonomous_Maneuvers_Project
 
-This repository contains the code and assets for Clemson Univeristy course AuE893: Autonomy Science and System for Spring 2020 semester. 
+This repository contains the code and assets for the AuE893-Turtlebot_Autonomous_Maneuvers_Project for Spring 2021 semester. 
 
-## Team Number: 04
+## Team Members
 		Atef Emran 
 		Anirudha Sundar 
 		Abhijeet Mordekar  
@@ -10,7 +10,6 @@ This repository contains the code and assets for Clemson Univeristy course AuE89
 		Ziyue Feng
  
 ## Final Project
-
 
 	The final project is an obstacle course which has to be implemented by Turtlebot3 using ROS. It is first implemented in the Gazebo and then the real world. It mainly contains of 4 maneouvers.
 
