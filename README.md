@@ -1,32 +1,34 @@
 ![Cover](https://raw.githubusercontent.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/main/src/videos/cover.jpg)
 
-# AuE893-Turtlebot_Autonomous_Maneuvers_Project
-
 This repository contains the code and assets for the ROS-based project "TurtleBot Autonomous Maneuvers". As a part of class AUE893 - Autonomy Science and Systems, at Clemson University International Center for Automotive Research (CU-ICAR).
-
-## Team Members
-		Atef Emran 
-		Anirudha Sundar 
-		Abhijeet Mordekar  
-		Kartik Loya 
-		Ziyue Feng
  
 ## Project Overview
 
 The project is ROS based using the Turtlebot3 Burger in simulation (Gazebo) and real-world environments to go through a prespecified course in which the TurtleBot will have to deal with 4 maneouvers:
 
+![Cover](https://raw.githubusercontent.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/main/src/videos/Track.png)
+
 1. Wall follower and Obstacle avoidance
-   Turtlebot maintains safe front distance from obstacle and maneuvers through course until it finds yellow lanes. In this it manipulates Lidar values for the design of controller.
+   Turtlebot maintains safe distance from obstacle and maneuvers through course until it finds yellow lanes. In this it manipulates Lidar values for the design of controller.
 		
 3. Line following
-   Turtlebot follows the yellow line using image processor (open-cv package). The controller uses lane centroid to control the angular speed of the bot.
+   Turtlebot follows the yellow line using image processing (open-cv package). The controller uses lane centroid to control the angular speed of the bot, with maintained linear 
+   velocity. 
 
 4. Traffic sign detection
-   Darknet package is used for traffic sign detection. Traffic sign callback functions stop the turtlebot for 3 seconds.
+   YOLO is used for traffic sign detection. Traffic sign callback functions stop the turtlebot for 3 seconds, then it proceeds following the line. 
 
 5. April Tag follower
-   April_ros package is used to detect apriltags and then its co-ordinates are used to design the controller for tracking the april tag
-	
+   AprilTag_ros package is used to detect apriltags and then its co-ordinates are used to design the controller for tracking the april tag, and maintain a sfae distance. 
+
+
+##  Results
+
+### Gazebo simulation
+
+### Real-World Simulation
+![realworld gif](https://github.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/blob/main/src/videos/RealWorld%20AUE893%20Turtlebot%20Autonomous%20Maneuvers%20Project_480p.gif?raw=true)
+
 This project is dependent on the following packages:
 1. [Turtlebot3 package](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)	
 2. [Turlebot3 simulation](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
@@ -43,34 +45,12 @@ This project is dependent on the following packages:
 		1. Bring up the turtleot
 		2. '$ roslaunch project_turtlebot_maneouvres turtlebot3_maneouvres_real.launch'
 		3. '$ rosrun image_transport republish compressed in:=/raspicam_node/image raw out:=camera/rgb/image_raw'     -- tp republish raspicam_node to camer/rgb
-	
-##  Results
-
-### Gazebo simulation
-1. Wall following and obstacle avoidance in gazebo
-	
-	![Wall following and obstacle avoidance in gazebo](https://media2.giphy.com/media/si6g6yiLhNC97hD4iM/giphy.gif)
-
-2. Line following and stop sign detection in gazebo
-
-	![Line following and stop sign detection in gazebo](https://media1.giphy.com/media/W8vedwATymTwBeuzEl/giphy.gif)
-
-3. AprilTag tracking in gazebo
-
-	![AprilTag tracking in gazebo](https://media.giphy.com/media/tGV4TY5m9PdG6Ycu6H/giphy.gif)
 
 
-### Real World Simulation
-1. wall following and obstacle avoidance in real
 
-	![wall following and obstacle avoidance in real](https://media.giphy.com/media/K16mv68PfDrX2IFCUJ/giphy-downsized.gif)
-
-2. Line following and stop sign detection in real
-
-	![Line following and stop sign detection in real](https://media.giphy.com/media/5HeiJdOfLHx1OjHdyA/giphy-downsized.gif)
-
-3. AprilTag tracking in real
-
-	![AprilTag tracking in real](https://media.giphy.com/media/GZVnmHQRJpgRdRydyt/giphy-downsized.gif)
-
-	
+## Team Members
+		Atef Emran 
+		Anirudha Sundar  
+		Kartik Loya 
+		Ziyue Feng
+		Abhijeet Mordekar 
