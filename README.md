@@ -1,4 +1,4 @@
-![Cover](https://raw.githubusercontent.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/main/src/videos/cover.jpg)
+![Cover](https://raw.githubusercontent.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/main/src/videos/git%20cover.jpg)
 
 This repository contains the code and assets for the ROS-based project "TurtleBot Autonomous Maneuvers". As a part of class AUE893 - Autonomy Science and Systems, at Clemson University International Center for Automotive Research (CU-ICAR).
  
@@ -36,24 +36,26 @@ The project is ROS based using the Turtlebot3 Burger in simulation (Gazebo) and 
 ### Real-World Demo
 ![realworld gif](https://github.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/blob/main/src/videos/RealWorld%20AUE893%20Turtlebot%20Autonomous%20Maneuvers%20Project_480p.gif?raw=true)
 
-This project is dependent on the following packages:
+## Running the project
+The project was created on ROS1 on Ubuntu 20.04.
+
+### Dependencies
 1. [Turtlebot3 package](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)	
 2. [Turlebot3 simulation](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
 3. [open cv](https://github.com/ros-perception/vision_opencv)
 4. [Apriltag ROS](https://github.com/AprilRobotics/apriltag_ros)
 5. [Darknet Ros(YOLO)](https://github.com/leggedrobotics/darknet_ros)
 
-## Commands to Execute
-	1. For Gazebo simulation
+### Running Commands 
+Use the below lines in your terminal to start the launch files.
+1. For Gazebo simulation
 		1. '$ roslaunch project_turtlebot_maneouvres turtlebot3_maneouvres.launch'
-		2. '$ rosrun project_turtlebot_maneouvres keyboard_teleop_apriltag.py'    -- for operating the 2nd turtlebot in the gazebo world.
+		2. '$ rosrun project_turtlebot_maneouvres keyboard_teleop_apriltag.py'    -- for operating the 2nd turtlebot with apriltag in the gazebo world.
 	
-	2. For real world
-		1. Bring up the turtleot
-		2. '$ roslaunch project_turtlebot_maneouvres turtlebot3_maneouvres_real.launch'
-		3. '$ rosrun image_transport republish compressed in:=/raspicam_node/image raw out:=camera/rgb/image_raw'     -- tp republish raspicam_node to camer/rgb
-
-
+2. For real world
+		1. Bring-up the turtleot
+		2. '$ rosrun image_transport republish compressed in:=/raspicam_node/image raw out:=camera/rgb/image_raw'     -- tp republish raspicam_node to rgb/camera
+		3. '$ roslaunch project_turtlebot_maneouvres turtlebot3_maneouvres_real.launch'
 
 ## Team Members
 		Atef Emran 
