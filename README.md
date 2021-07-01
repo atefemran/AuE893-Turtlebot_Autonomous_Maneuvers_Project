@@ -66,6 +66,5 @@ Use the below lines in your terminal to start the launch files.
 2. '$ rosrun image_transport republish compressed in:=/raspicam_node/image raw out:=camera/rgb/image_raw'     -- tp republish raspicam/image to rgb/camera/raw
 3. '$ roslaunch project_turtlebot_maneouvres turtlebot3_maneouvres_real.launch'
 ```
-#turtlebot3 #lidar #raspi_cam #ros #python3 #
 
 
