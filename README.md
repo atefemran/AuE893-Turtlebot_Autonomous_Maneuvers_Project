@@ -36,6 +36,10 @@ https://youtu.be/JvIXgb4VtXY
 ![realworld gif](https://github.com/atefemran/AuE893-Turtlebot_Autonomous_Maneuvers_Project/blob/main/src/videos/RealWorld%20AUE893%20Turtlebot%20Autonomous%20Maneuvers%20Project_480p.gif?raw=true)
 https://youtu.be/KOGwsMkNCMc
 
+### Further Imporovements
+The architecture used in the project could be enhanced by having a controller node that governs the switching between the modes based on the subscribed topics from the sensing nodes. Accordingly, using semaphore flags through publishing control topics, each node could be turned on or off. 
+Using this architecture will allow for better modularity and scalability. 
+
 ## Running the project
 The project was created on ROS1 on Ubuntu 20.04.
 
@@ -64,6 +68,4 @@ Use the below lines in your terminal to start the launch files.
 ```
 #turtlebot3 #lidar #raspi_cam #ros #python3 #
 
-### Further Imporovements
-The architecture used in the project could be enhanced by having a controller node that governs the switching between the modes based on the subscribed topics from the sensing nodes. Accordingly, using semaphore flags through publishing control topics, each node could be turned on or off. 
-Using this architecture will allow for better modularity and scalability. 
+
